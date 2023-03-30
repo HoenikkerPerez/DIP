@@ -1,0 +1,35 @@
+// Configuration file
+{
+    "render_engine": "CYCLES",
+    "environment_type": "TEXTURE_ENVIRONMENT_BLURRED",
+    "background_image":  "<REQUIRED> path_to_background_image",
+    "light_disposition": "TRIANGLE",
+    "render_dir": "<REQUIRED> path_to_output_dir",
+    "datasets": [{
+        "name": "custom_models", 
+        "path": "./models",
+    ],
+    "materials_path": "./materials",
+    "materials": [  
+        {"name": "marblewhitebetter"
+        },
+        {"name": "marblewhitebetter-photogrammable"
+        },
+        {"name": "marblebrown"
+        },
+        {"name": "marblebrown-photogrammable"
+        },
+        {"name": "rusty-iron"
+        },
+        {"name": "rusty-iron-photogrammable"
+        },
+        {"name": "metal-bare"
+        },
+        {"name": "metal-bare-photogrammable"
+        }
+    ],
+    "exiftool_path": "<OPTIONAL> path_to_exiftool.exe",
+    "imagemagick_path": "<OPTIONAL> path_to_imagemagick.exe",
+    "camera_model": "Canon6D_MARKII_35",
+    "DEBUG": false
+}
